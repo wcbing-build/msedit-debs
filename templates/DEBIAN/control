@@ -1,0 +1,8 @@
+Package: msedit
+Version: version
+Architecture: arch
+Maintainer: wcbing <i@wcbing.top>
+Section: editors
+Priority: optional
+Homepage: https://github.com/microsoft/edit
+Description: A simple editor for simple needs.
