@@ -6,7 +6,7 @@ Files: *
 Copyright: 2025 Microsoft Corporation
 License: MIT
 
-Files: DEBIAN/*
+Files: debian/*
 Copyright: 2025 wcbing <i@wcbing.top>
 License: MIT
 

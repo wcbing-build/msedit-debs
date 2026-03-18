@@ -1,6 +1,6 @@
-自行打包的 [Microsoft Edit](https://github.com/microsoft/edit)，适用于 Debian 或基于 Debian 的发行版。
+自行打包的 [Microsoft Edit](https://github.com/microsoft/edit)，适用于基于 Debian 的发行版。
 
-Self-packaged [Microsoft Edit](https://github.com/microsoft/edit), suitable for Debian and Debian-based distros.
+Self-packaged [Microsoft Edit](https://github.com/microsoft/edit), suitable for Debian-based distro.
 
 
 ## Usage/用法
