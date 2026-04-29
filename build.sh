@@ -23,6 +23,8 @@ prepare() {
 
 build() {
     BASE_DIR="$PACKAGE"_"$ARCH" && rm -rf "$BASE_DIR"
+    install -D templates/postinst "$BASE_DIR/DEBIAN/postinst"
+    install -D templates/prerm "$BASE_DIR/DEBIAN/prerm"
     install -D templates/copyright -t "$BASE_DIR/usr/share/doc/$PACKAGE"
     install -D tmp/changelog.gz -t "$BASE_DIR/usr/share/doc/$PACKAGE"
     install -D "tmp/$PACKAGE.desktop" -t "$BASE_DIR/usr/share/applications"
@@ -31,7 +33,7 @@ build() {
     # Download and move file
     curl -fsLo "tmp/$PACKAGE-$ARCH.tar.zst" "$(get_url_by_arch "$ARCH")"
     tar -xf "tmp/$PACKAGE-$ARCH.tar.zst"
-    install -D -m 755 -t "$BASE_DIR/usr/bin" edit && rm edit
+    install -D -m 755 edit "$BASE_DIR/usr/bin/$PACKAGE" && rm edit
 
     # Package deb
     mkdir -p "$BASE_DIR/DEBIAN"
