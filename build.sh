@@ -9,8 +9,8 @@ PACKAGE=msedit
 REPO=microsoft/edit
 
 ARCH_LIST="amd64 arm64"
-AMD64_FILENAME="edit-$VERSION-x86_64-linux-gnu.tar.zst"
-ARM64_FILENAME="edit-$VERSION-aarch64-linux-gnu.tar.zst"
+AMD64_FILENAME="edit-$VERSION-x86_64-linux-gnu.tar.gz"
+ARM64_FILENAME="edit-$VERSION-aarch64-linux-gnu.tar.gz"
 
 prepare() {
     mkdir -p output tmp
